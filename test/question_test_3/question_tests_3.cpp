@@ -8,5 +8,8 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("test")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(get_sales_commission(100) == 5);
+	REQUIRE(get_sales_commission(750) == 45);
+	REQUIRE(get_sales_commission(1100) == 77);
+	REQUIRE(get_sales_commission(1750) == 140);
 }
